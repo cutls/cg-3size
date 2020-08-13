@@ -19,9 +19,9 @@
     <h3>3size to IDOL</h3>
     空欄値はなかったことにします。<br />
     <label><input v-model="det" type="checkbox" />詳細データも表示</label><br />
-    <input type="text" v-model="b" placeholder="B" class="tti-text" />
-    <input type="text" v-model="w" placeholder="W" class="tti-text" />
-    <input type="text" v-model="h" placeholder="H" class="tti-text" />
+    <input type="number" v-model="b" placeholder="B" class="tti-text" />
+    <input type="number" v-model="w" placeholder="W" class="tti-text" />
+    <input type="number" v-model="h" placeholder="H" class="tti-text" />
     <button v-on:click="calc()">Calc</button>
     <span v-if="det"><br />d: 入力値との距離/ RrI: ローレル指数</span>
     <table>
